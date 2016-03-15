@@ -1,0 +1,181 @@
+body {
+  background: #f1f1f1;
+}
+.content {
+  width: 1050px;
+  margin: auto;
+  height: 900px;
+  background: url(../images/bg.jpg) no-repeat 50%;
+  position: relative;
+}
+.outerclip {
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  transform: skew(-30deg);
+  overflow: hidden;
+  display: inline-block;
+}
+.innerclip {
+  -webkit-transform: skew(50deg);
+  -moz-transform: skew(50deg);
+  -ms-transform: skew(50deg);
+  -o-transform: skew(50deg);
+  transform: skew(50deg);
+  overflow: hidden;
+  display: inline-block;
+}
+.clipboard {
+  width: 410px;
+  height: 330px;
+  background-color: #d3d0c9;
+  background-image: url(../images/1418321903_bankoboev.ru_gruzovik_scania_cisterna.jpg);
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  -webkit-clip-path: polygon(79% 8%, 100% 49%, 84% 89%, 15% 89%, 0 48%, 21% 8%);
+  clip-path: polygon(79% 8%, 100% 49%, 84% 89%, 15% 89%, 0 48%, 21% 8%);
+}
+.slide-block {
+  position: relative;
+  height: 288px;
+  width: 461px;
+}
+.block__title {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  line-height: 80px;
+  background: #95a795;
+  font-family: 'MyriadProSemibold';
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.slide-block {
+  width: 416px;
+  height: 359px;
+  position: absolute;
+  z-index: 2;
+}
+.slide-block:hover .slide-menu {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  transform: rotateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.slide-menu {
+  position: absolute;
+  z-index: 100;
+  width: 416px;
+  height: 359px;
+  background: url(../images/overlay.png) no-repeat;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(120deg);
+  -moz-transform: rotateY(120deg);
+  transform: rotateY(120deg);
+  opacity: 0;
+  visibility: hidden;
+}
+.slide__item {
+  width: 416px;
+  height: 359px;
+}
+.slide__title {
+  width: 304px;
+  height: 83px;
+  text-align: center;
+  color: #fff;
+  font-family: 'MyriadProSemibold';
+  font-size: 28px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.35);
+  position: absolute;
+  z-index: 101;
+  bottom: -1px;
+  left: 56px;
+}
+.slide__title.road {
+  background: url(../images/road-bg.png) no-repeat;
+  text-transform: uppercase;
+}
+.slide__title.djaparts {
+  background: url(../images/road-bg.png) no-repeat;
+}
+.slide__title.building {
+  background: url(../images/building-bg.png) no-repeat;
+  left: 57px;
+}
+.carousel1 {
+  top: 105px;
+  left: 3px;
+}
+.carousel2 {
+  left: 319px;
+  top: 285px;
+}
+.carousel3 {
+  right: 0;
+  bottom: 75px;
+}
+.logo {
+  font-family: 'philosopherregular';
+  color: #e5cd94;
+  font-size: 55px;
+  right: 30px;
+  top: 100px;
+  position: absolute;
+  z-index: 2;
+}
+.logo span {
+  color: #94b3c5;
+}
+.menu__list {
+  height: 277px;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'MyriadProRegular';
+}
+.menu__list ul {
+  display: inline-block;
+  text-align: left;
+}
+.menu__list ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.menu__list ul li:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff200;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.menu__list ul li:last-child {
+  margin-bottom: 0;
+}
+.menu__list ul a {
+  color: #d7d7d7;
+}
+.menu__list ul a:hover {
+  color: #fff200;
+}

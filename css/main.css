@@ -8,35 +8,6 @@ body {
   background: url(../images/bg.jpg) no-repeat 50%;
   position: relative;
 }
-.outerclip {
-  -webkit-transform: skew(-30deg);
-  -moz-transform: skew(-30deg);
-  -ms-transform: skew(-30deg);
-  -o-transform: skew(-30deg);
-  transform: skew(-30deg);
-  overflow: hidden;
-  display: inline-block;
-}
-.innerclip {
-  -webkit-transform: skew(50deg);
-  -moz-transform: skew(50deg);
-  -ms-transform: skew(50deg);
-  -o-transform: skew(50deg);
-  transform: skew(50deg);
-  overflow: hidden;
-  display: inline-block;
-}
-.clipboard {
-  width: 410px;
-  height: 330px;
-  background-color: #d3d0c9;
-  background-image: url(../images/1418321903_bankoboev.ru_gruzovik_scania_cisterna.jpg);
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  -webkit-clip-path: polygon(79% 8%, 100% 49%, 84% 89%, 15% 89%, 0 48%, 21% 8%);
-  clip-path: polygon(79% 8%, 100% 49%, 84% 89%, 15% 89%, 0 48%, 21% 8%);
-}
 .slide-block {
   position: relative;
   height: 288px;
@@ -136,9 +107,14 @@ body {
   color: #e5cd94;
   font-size: 55px;
   right: 30px;
-  top: 100px;
+  top: 80px;
   position: absolute;
   z-index: 2;
+  width: 450px;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
 }
 .logo span {
   color: #94b3c5;
